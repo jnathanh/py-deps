@@ -1,0 +1,9 @@
+
+# package with only stdlib dependencies
+pipdeptree==2.9.5
+
+# package with dependencies on non-stdlib packages
+requests==2.26.0
+pytest
+build
+twine
