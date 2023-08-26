@@ -3,6 +3,10 @@
 # show executed commands
 # set -x
 
+# change context to the project root
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd "$SCRIPT_DIR/.."
+
 env_dir="venv"
 
 # create a virtual environment for this project if it doesn't exist
