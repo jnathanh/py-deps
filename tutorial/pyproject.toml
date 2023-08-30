@@ -1,7 +1,11 @@
+[project]
+version = "2023.0.14"
+name = "hellonhtutorial"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[project]
-version = "2023.0.1"
-name = "hellonh"
+# allows using a different distribution name than the package name
+[tool.hatch.build.targets.wheel]
+packages = ["src/hellonh"]

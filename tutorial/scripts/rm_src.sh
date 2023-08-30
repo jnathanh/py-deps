@@ -7,4 +7,4 @@ cd "$SCRIPT_DIR/.."
 
 # copy the source directory to the project folder
 1>&2 echo "Removing $(pwd)/src"
-rm -r src
+rm -rf src
