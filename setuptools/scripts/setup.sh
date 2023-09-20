@@ -30,4 +30,6 @@ source "$env_dir/bin/activate"
 pip install --upgrade pip
 
 # install development dependencies
-pip install -r dev-requirements.txt
+if [ -f dev-requirements.txt ]; then
+    pip install -r dev-requirements.txt
+fi
